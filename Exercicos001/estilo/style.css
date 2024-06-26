@@ -13,12 +13,13 @@ nav{
     max-width: 1190px;
     margin: 0 auto;
 }
+
 main{
     width: 100%;
-    height: 70vh;
+    height: 87vh;
     background-color: red;
     background-image:url(../images/header_bg.png);
-    background-position: cover;
+    background-size: cover;
 }
 .banners{
     display: flex;
@@ -74,6 +75,64 @@ form input{
     padding: 12px;
     margin-bottom: 10px;
 }
+.section{
+    background-color: lightgray;
+
+}
+.elem{
+    text-align: center;
+    padding: 3%;
+}
+.elem h1{
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.elem p{
+    text-align: justify;
+}
+
+.cardp{
+    /* background-color: ; */
+    text-align: center;
+    padding: 2%;
+    position: relative;
+}
+.cardp h2{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: lightgray;
+    font-weight: 100;
+}
+.imgicon{
+    position:absolute;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    top: -25px;
+    left:47.8%;
+    background-color: rebeccapurple;
+    background-image: url(../images/arrow.png);
+    background-size: cover;
+}
+.cart{
+    display: flex;
+    padding: 2%;
+}
+
+.ca{
+    padding: 8px;
+   
+}
+.ca p{
+    text-align: justify;
+}
+
+footer{
+    padding: 2%;
+    text-align: center;
+}
 @media screen and (max-width:1024px){
     main{
         height: 100%;
@@ -88,6 +147,15 @@ form input{
     }
     .bannerform{
         margin: 10px auto;
+
+    }
+    .imgicon{
+        top:0;
+        left: 45%;
+    }
+    .cart{
+     flex-direction: column;
+     margin-bottom: 10px;
 
     }
 }
